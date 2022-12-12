@@ -1,0 +1,311 @@
+/*-------- configurações gerais --------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  color: white;
+}
+
+/*-------------- header ----------------*/
+header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  height: 5rem;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Montserrat, Medium;
+}
+
+.menu {
+  width: 98vh;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  /* border: 1px solid green; */
+}
+
+li {
+  list-style: none;
+  
+}
+
+li:hover {
+  color: #9767a9;
+  font-weight: bold;
+  Montserrat, ExtraBold
+}
+
+.divform {
+  display: flex;
+  border: 2px solid #9767a9;
+  border-radius: 60px;
+  padding: 5px;
+}
+
+.search {
+  display: flex;
+}
+
+button {
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+  margin-right: 8px;
+}
+
+input {
+  border: 0;
+  outline: 0;
+}
+
+::placeholder {
+  color: #ac95bb;
+  font-size: 14px;
+  position: relative;
+  /* bottom: 1px; */
+}
+
+/*--------- entre header e main ---------*/
+
+.cabeludo {
+  width: 100%;
+  height: 800PX;
+  background-image: url(./img/cabeludo.png);
+  background-position: center center;
+}
+
+h1 {
+  font-size: 85px;
+  position: relative;
+  top: 44%;
+  left: 7px;
+  
+  width: 22rem;
+  font-family: Playfair Display, Black Roman;
+}
+
+.cabeludo p {;
+  font-family: Montserrat, Light;
+  font-size: 40px;
+  position: relative;
+  left: 67%;
+  top: 30%;
+  width: 24rem;
+}
+
+.secondsection {
+  background-color: #9767A9;
+  display: flex;
+  justify-content: center; 
+  height: 20rem;
+}
+
+.secondsection h2 {
+  position: relative;
+  top: 2%;
+  
+  font-size: 58px;
+  font-family: Playfair Display, Black Roman;
+  width: 48rem;
+  height: 10rem;
+  
+}
+
+.secondsection p {
+  position: relative;
+  top: 9%;
+  
+  font-family: Montserrat, Light;
+  font-size: 24px;
+  width: 31rem;
+  height: 19rem;
+}
+
+
+/*---------------- main ----------------*/
+main {
+  height: 560vh;
+}
+
+.dicas img {
+  width: 36vw;
+  height: 55vh;
+}
+
+.dicas {
+  padding: 3rem;
+  /* border: 2px solid red; */
+  width: 82vw;
+  height: 180rem;
+  position: relative;
+  left: 9%;
+  bottom: 1.5%;
+  display: flex;
+  
+}
+
+.dicas div {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.direita {
+  position: relative;
+  top: 9%;
+  /* border: 2px solid purple; */
+}
+
+figure h2 {
+  margin-bottom: 5%;
+  font-family: Playfair Display, Black Roman;
+}
+
+figcaption {
+  position: relative;
+  bottom: 13%;
+  left: 5%;
+  width: 32vw;
+  padding: 4%;
+  background-color: #9767A9;
+}
+
+#linha {
+  height: 8vh;
+  width: 32vw;
+  /* border: 2px solid orange; */
+  position: relative;
+  left: 5%;
+}
+
+/*--------- fotos finais da main ---------*/
+
+.sectionTwo {
+  /* border: 2px solid green; */
+  display: flex;
+  width: 91vw;
+  position: relative;
+  left: 3.5%;
+}
+
+.sectionTwo div {
+  /* border: 2px solid blue; */
+}
+
+.sectionTwo img {
+  /* border: 1px solid blue; */
+  margin: 3px 7px;
+}
+
+.One {
+  height: 80.7vh;
+  width: 22vw;
+}
+
+.Two {
+  height: 27vh;
+  width: 22vW;
+}
+
+.Three,.Four {
+  height: 39.6vh;
+  width: 14vw;
+}
+
+.little {
+  height: 27vh;
+  width: 14vw;
+}
+
+.cabeludinho {
+  height: 109.3vh;
+  width: 22vw;
+}
+
+.comprido {
+  height: 80.7vh;
+  width: 14vw;
+}
+
+/*-------------- footer ----------------*/
+footer {
+  display: flex;
+  height: 106px;
+  background-color: #9767A9;
+  text-align: center;
+  justify-content: center;
+  /* border: 2px solid green; */
+}
+
+.direitosAutorais {
+  width: 53rem;
+  height: 50px;
+  position: relative;
+  right: 2%;
+  top: 20%;
+  text-align: initial;
+}
+
+.direitosAutorais {
+  font-size: 15px;
+}
+
+.container {
+  width: 24rem;
+  display: flex;
+  position: relative;
+  left: 3%;
+  top: 5%;
+  height: 5rem;
+}
+
+.container div {
+  /* border: 2px solid orange; */
+  width: 8rem;
+  align-items: center;
+  display: flex;
+  height: 5rem;
+}
+
+.container :hover {
+  background-color: #AC95BB;
+  cursor: pointer;
+}
+
+p {
+  color: white;
+}
+
+/*------------- responsivo  -------------*/
+
+@media (max-width:740px) {
+  .esquerda {
+    width: 100%;
+    border: 2px solid green;
+  }
+  .dicas {
+    width: 100%;
+  }
+  figcaption {
+    width: 100%;
+  }
+}
