@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "Montserrat";
 }
 
 body {
@@ -17,8 +17,8 @@ header {
   position: sticky;
   z-index: 1000;
   top: 0;
-  height: 5rem;
   width: 100%;
+  height: 5rem;
   background-color: white;
   padding: 10px;
   display: flex;
@@ -26,6 +26,10 @@ header {
   align-items: center;
   font-family: Montserrat, Medium;
 }
+
+#menu-responsivo {
+display: none;
+} 
 
 .menu {
   width: 98vh;
@@ -49,7 +53,7 @@ li {
 li:hover {
   color: #9767a9;
   font-weight: bold;
-  Montserrat, ExtraBold
+  font-family: Montserrat, ExtraBold;
 }
 
 .divform {
@@ -102,7 +106,7 @@ h1 {
   font-family: Playfair Display, Black Roman;
 }
 
-.cabeludo p {;
+.cabeludo p {
   font-family: Montserrat, Light;
   font-size: 40px;
   position: relative;
@@ -142,37 +146,43 @@ h1 {
 
 /*---------------- main ----------------*/
 main {
-  height: 560vh;
+  height: 460vh;
 }
 
 .dicas img {
   width: 36vw;
-  height: 55vh;
+  /* height: 55vh; */
 }
 
 .dicas {
-  padding: 3rem;
-  /* border: 2px solid red; */
-  width: 82vw;
-  height: 180rem;
-  position: relative;
-  left: 9%;
-  bottom: 1.5%;
+  margin-top: 8em;
+  margin-bottom: -7em;
   display: flex;
-  
+  flex-wrap: wrap;
+  gap: 0.8em;
+  justify-content: center;
 }
 
-.dicas div {
-  width: 40vw;
+.dicas figure {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
+.dicas figure:nth-of-type(odd) {
+  margin-top: -11em;
+  height: 53vw;
+}
 
-.direita {
-  position: relative;
-  top: 9%;
-  /* border: 2px solid purple; */
+.dicas figure:nth-of-type(even) {
+  margin-top: 2em;
+}
+
+.dicas figcaption {
+  margin-top: -7em;
+  width: 29vw;
+  padding: 4%;
+  background-color: #9767A9;
 }
 
 figure h2 {
@@ -180,22 +190,12 @@ figure h2 {
   font-family: Playfair Display, Black Roman;
 }
 
-figcaption {
-  position: relative;
-  bottom: 13%;
-  left: 5%;
-  width: 32vw;
-  padding: 4%;
-  background-color: #9767A9;
-}
-
 #linha {
   height: 8vh;
-  width: 32vw;
-  /* border: 2px solid orange; */
-  position: relative;
-  left: 5%;
+  width: 36vw;
+  padding: 0 3.5em;
 }
+
 
 /*--------- fotos finais da main ---------*/
 
@@ -205,10 +205,6 @@ figcaption {
   width: 91vw;
   position: relative;
   left: 3.5%;
-}
-
-.sectionTwo div {
-  /* border: 2px solid blue; */
 }
 
 .sectionTwo img {
@@ -298,14 +294,116 @@ p {
 /*------------- responsivo  -------------*/
 
 @media (max-width:740px) {
-  .esquerda {
-    width: 100%;
+  
+  header img {
+    margin-left: 77%;
+  }
+
+  #menu-responsivo {
+    display: flex;
     border: 2px solid green;
   }
+
+  header div, form button {
+    overflow: hidden;
+  }
+
+  .divform {
+    border: none;
+  }
+
+    .cabeludo {
+    background-image: url(./img/cabeludo2.png); 
+    background-size:100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+  }
+
+  ul {
+    height: 0;
+    overflow: hidden;
+  }
+
   .dicas {
     width: 100%;
+    border: 2px solid red;
   }
-  figcaption {
+  
+  .dicas figure img {
+    width: 80%;
+    border: 2px solid blue;
+    margin: 5rem;
+  }
+
+  .secondsection {
+    height: 32.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    font-size: 60px;
+    position: relative;
+    top: 30%;
+    left: 10%;
+  }
+
+  .cabeludo p {
+    margin-top: 0;
+    font-size: 23px;
+    position: relative;
+    left: 10%;
+    top: 31%;
+    width: 14rem;
+    
+  }
+
+  main {
+    height: 790vh;
+  }
+
+  .secondsection h2 {
+    font-size: 30px;
+    border: 2px solid blue;
+    height: 4.5rem;
+    margin-bottom: 0;
+  }
+
+  .dicas figure:nth-of-type(odd) {
+    margin-top: 0;
+  }
+
+  .secondsection {
+    margin-bottom: -8em;
+  }
+
+  .secondsection p {
+    border: 2px solid green;
+    height: 58vh;
+    margin-bottom: 6rem;
+  }
+
+  .dicas figcaption {
     width: 100%;
+    height: 45vh;
+    border: 2px solid green;
+    margin-bottom: 1rem;
+    position: relative;
+    /* bottom: 2rem; */
   }
+
+  figure {
+    display: flex;
+    border: 2px solid rgb(179, 255, 0);
+    margin-bottom: 4rem;
+  }
+
+  .sectionTwo {
+    top: 10%;
+    width: 80vw;
+    height: 50vh;
+    border: 2px solid;
+  }
+
 }
